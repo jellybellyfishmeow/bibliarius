@@ -1,0 +1,21 @@
+name: Static Checks & Tests
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Setup Dependencies
+        run: |
+          make setup
+      - name: Run Static Analysis
+        run: |
+          make lint
+      - name: Run Tests
+        run: |
+          make test

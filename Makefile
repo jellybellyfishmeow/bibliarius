@@ -6,7 +6,8 @@ setup:
 	make install
 
 format:
-	poetry run black
+	poetry run black bibliarius/
+	poetry run black tests/
 
 lint:
 	poetry run black --check bibliarius/

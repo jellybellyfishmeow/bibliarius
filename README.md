@@ -4,11 +4,16 @@ Tracks book reading lists :)
 
 ## Dev Setup
 
+### Perquisites
+
+* Python 3.9.x ([pyenv](https://github.com/pyenv/pyenv) can help)
+* [Docker](https://docs.docker.com/desktop/mac/install/)
+
 ### Initial Setup
 
-1. Make sure you have Python 3.9.x installed ([pyenv](https://github.com/pyenv/pyenv) can help)
-2. Run `make setup` to install dependencies
-3. Run `make ci` to verify successful setup
+Run `make setup` to install dependencies and start local DB container
+
+Run `make ci` to verify successful setup
 
 ### Testing
 

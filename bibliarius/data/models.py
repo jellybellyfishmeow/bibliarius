@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Date, String, Text
 
 from bibliarius.data.sql import SQL_BASE
+from sqlalchemy.orm import relationship
 
 
 class Book(SQL_BASE):

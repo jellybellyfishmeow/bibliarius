@@ -40,7 +40,6 @@ SQL_BASE = declarative_base(
     name="SQL_BASE",
 )
 
-
 def get_db_session() -> Generator[Session, None, None]:
     """
     Fetch SQL Session
